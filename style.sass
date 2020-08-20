@@ -1,0 +1,2180 @@
+$color-site-active: rgba(241, 109, 127, 1)
+
+
+
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Lato', sans-serif
+a
+  text-decoration: none
+.center
+  padding: 0 calc(50% - 570px)
+.button
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 15px
+  color: rgba(255, 255, 255, 1)
+  text-align: left
+  letter-spacing: 0.03em
+  line-height: 32px
+  user-select: none
+  text-decoration: none
+  outline: none
+  background-color: $color-site-active
+  padding: 0 29px 0 19px
+  /* Отступ от текста до рамки */
+  border-radius: 3px
+
+
+.button:hover
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+.header
+  height: 100px
+  background-color: #ffffff
+  border: 1px solid #ececec
+  box-shadow: 0 0 10px 0 #ececec
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header__left,
+.header__right
+    display: flex
+    align-items: center
+
+.cart
+    position: relative
+
+.cart_drop
+    border-radius: 5px
+    left: -40px
+    //margin-top: 16px
+    display: none
+    flex-direction: column
+    height: 456px
+    width: 262px
+    position: absolute
+    background-image: url(img/cart_drop.png)
+    background-color: rgba(255, 255, 255, 1)
+
+
+
+.cart_drop_flex
+    margin-top: 21px
+    margin-left: 16px
+    margin-right: 15px
+
+
+.product
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 85px
+    width: 230px
+    border-bottom: 1px solid rgba(237, 237, 237, 0.75)
+    padding-bottom: 16px
+    padding-top: 16px
+    margin-bottom: 2px
+
+
+.cart_prod_info h1
+    font-size: 12px
+    font-weight: bold
+    color: rgba(34, 34, 34, 1)
+    text-transform: uppercase
+    margin-top: 10px
+    margin-bottom: 10px
+
+
+.cart_prod_info h2
+    font-size: 12px
+    color: $color-site-active
+    text-transform: uppercase
+    margin-top: 10px
+
+
+.total
+    display: flex
+    justify-content: space-between
+    margin-top: 19px
+    margin-bottom: 32px
+    position: relative
+
+
+.total h1
+    font-size: 16px
+    font-weight: bold
+    color: rgba(34, 34, 34, 1)
+    text-transform: uppercase
+
+
+.cart_button
+    display: flex
+    flex-direction: column
+
+
+.checkout__
+  margin-top: 89px
+.checkout
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 14px
+    font-weight: bold
+    color: $color-site-active
+    text-transform: uppercase
+    outline: 1px solid $color-site-active
+    padding: 19px 74px 19px 74px
+    /* Отступ от текста до рамки */
+    border-radius: 3px
+    margin-top: 89px
+
+
+.gotocart
+    margin-top: 11px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 14px
+    font-weight: bold
+    color: rgba(74, 74, 74, 1)
+    text-transform: uppercase
+    outline: 1px solid rgba(234, 234, 234, 1)
+    padding: 19px 74px 19px 74px
+    /* Отступ от текста до рамки */
+    border-radius: 3px
+
+
+.cart:hover .cart_drop
+    display: flex
+
+
+.header__form
+    display: flex
+    align-items: center
+    margin-left: 37px
+    height: 39px
+    width: 403px
+
+
+
+.header__browse
+  height: 38px
+  width: 87px
+  outline: 1px solid rgba(230, 230, 230, 1)
+  position: relative
+
+
+
+.drop
+  background-color: #ffffff
+  border-radius: 5px
+  padding: 12px 20px
+  position: absolute
+  display: none
+  top: 51px
+  border: 1px solid #ececec
+
+
+.drop_last
+  right: 0
+
+
+.drop__flex
+  width: 234px
+  margin-right: 46px
+
+
+.drop__flex:last-of-type
+   margin-right: 0
+
+
+.drop__h3
+  font-size: 14px
+  color: #232323
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  border-bottom: 1px solid #e8e8e8
+  padding-bottom: 8px
+  padding-top: 8px
+  margin-bottom: 8px
+
+
+.drop__ul
+  list-style-type: none
+
+
+.drop__link
+  font-size: 14px
+  color: #646464
+  letter-spacing: 0.03em
+  line-height: 28px
+
+
+.drop__link:hover
+  color: #f16d7f
+
+
+.header__browse[open] .drop
+  display: flex
+  top: 23px
+  z-index: 1
+
+
+
+summary
+  height: 38px
+  width: 87px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 14px
+  font-weight: 300
+  color: rgba(34, 34, 34, 1)
+  text-align: right
+  letter-spacing: 0.03em
+  line-height: 32px
+
+
+
+summary::-webkit-details-marker
+  display: none
+
+
+summary::after
+  content: '\25BC'
+  padding-right: 0.5em
+  color: rgba(131, 131, 131, 1)
+
+
+.head_br_items
+  margin-top: 9px
+  list-style-type: none
+  height: auto
+  width: 262px
+  background-color: rgba(255, 255, 255, 1)
+  border-radius: 5px
+  padding-left: 15px
+  font-size: 14px
+  color: rgba(35, 35, 35, 1)
+  text-align: right
+  letter-spacing: 0.03em
+  line-height: 17px
+  text-transform: uppercase
+
+
+.head_br_items a
+  font-size: 10px
+  color: rgba(79, 79, 79, 1)
+  text-align: right
+  letter-spacing: 0.03em
+  line-height: 20px
+  text-transform: none
+
+
+
+.head_br_items a:hover
+  border-bottom: 3px solid $color-site-active
+
+
+
+
+
+
+.header_inp_text
+  height: 38px
+  width: 279px
+  background-color: rgba(255, 255, 255, 1)
+  border: 1px solid rgba(230, 230, 230, 1)
+  padding-left: 16px
+
+
+
+
+
+.header__cart
+  margin-right: 26px
+
+.logo
+  display: flex
+  align-items: center
+  font-size: 27px
+  font-weight: 300
+  color: rgba(62, 62, 64, 1)
+  text-align: center
+  letter-spacing: 0.03em
+  line-height: 32px
+  text-transform: uppercase
+
+.logo_f
+  font-size: 27px
+
+.logo x
+    //font-size: 27px
+    font-weight: 900
+    color: $color-site-active
+    //text-align: center
+    //letter-spacing: 0.03em
+    //line-height: 32px
+    //text-transform: uppercase
+
+
+.logo__img
+    margin-right: 13px
+
+.menu
+  list-style-type: none
+  display: flex
+  justify-content: center
+
+
+.menu__link
+    padding: 20px
+    display: block
+    font-size: 14px
+    font-weight: bold
+    color: #222222
+    line-height: 26px
+    text-transform: uppercase
+    border-bottom: 3px solid rgba(255, 255, 255, 1)
+
+
+.menu__link:hover
+    border-bottom: 3px solid $color-site-active
+
+
+
+.menu__list
+    position: relative
+
+
+.menu__list:hover .drop
+    display: flex
+
+.promo
+  height: 614px
+  background-color: #e8e8e8
+  background-image: url(img/promo-back.png)
+  background-position: center -51px
+  background-repeat: no-repeat
+  display: flex
+  align-items: flex-start
+
+
+.promo__content
+    margin-top: 224px
+    padding-left: 12px
+    border-left: 12px solid $color-site-active
+
+
+.promo__h1
+
+    font-size: 60px
+    font-weight: 900
+    color: rgba(34, 34, 34, 1)
+    line-height: 46px
+    margin-bottom: 12px
+
+
+
+.promo__h2
+    font-size: 40px
+    font-weight: 900
+    color: rgba(34, 34, 34, 1)
+    line-height: 32px
+
+
+/* стилизация  items*/
+.items
+
+  margin-top: 98px
+  height: 823px
+  display: flex
+  justify-content: space-between
+
+
+.category
+    width: 560px
+
+
+.category_max
+    height: 542px
+    border: 1px solid #fff
+    margin-bottom: 20px
+
+
+.category_mini
+    height: 261px
+    border: 1px solid #fff
+    margin-bottom: 20px
+
+
+.box
+    margin-top: 26px
+    background-color: rgba(255, 255, 255, 1)
+    width: 180px
+    height: 82px
+
+
+
+
+
+.item_h2
+
+    margin-left: 15px
+    margin-top: 16px
+    font-size: 12px
+    font-weight: 900
+    color: rgba(34, 34, 34, 1)
+    letter-spacing: 0.03em
+    text-transform: uppercase
+
+
+.item_h1
+
+    margin-left: 15px
+    margin-top: 10px
+    font-size: 25px
+    font-weight: 900
+    color: $color-site-active
+    letter-spacing: 0.03em
+    text-transform: uppercase
+
+/* стилизация fetured_items*/
+
+.fetured_items
+  position: relative
+  margin-top: 98px
+  height: auto
+  width: 1139px
+  display: flex
+  flex-direction: column
+
+
+
+.f_items_header
+    display: flex
+    flex-direction: column
+
+
+.f_items_h1,
+.f_items_h2
+    display: flex
+    justify-content: center
+
+
+.f_items_h1
+    font-size: 30px
+    font-weight: bold
+    color: rgba(34, 34, 34, 1)
+    text-align: center
+    letter-spacing: 0.03em
+
+
+
+
+.f_items_h2
+    margin-top: 16px
+    font-size: 14px
+    color: rgba(159, 159, 159, 1)
+    text-align: center
+    letter-spacing: 0.03em
+
+
+
+
+.f_items
+    position: relative
+    /*width: 23%*/
+    margin-top: 60px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+
+.f_items_list:hover
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
+
+
+.f_items_list:hover .items_img
+    filter: brightness(40%)
+
+
+.f_items_list:hover .items_add
+    display: flex
+
+
+.f_items_list
+    position: relative
+    width: 23%
+    margin-right: 20px
+    margin-bottom: 25px
+
+
+
+
+.f_items_content
+    padding: 19px 15px
+
+
+.f_items_name
+    font-size: 15px
+    color: rgba(34, 34, 34, 1)
+    text-align: center
+    text-transform: uppercase
+
+
+.f_items_price
+    font-size: 16px
+    font-weight: bold
+    color: $color-site-active
+    /*text-align: center*/
+    text-transform: uppercase
+    margin-top: 15px
+
+
+
+.items_add
+    position: absolute
+    top: 97px
+    left: 70px
+    font-size: 13px
+    font-weight: bold
+    color: rgba(255, 255, 255, 1)
+    border: 1px solid rgba(255, 255, 255, 1)
+    display: none
+    justify-content: center
+    align-items: center
+
+    height: 39px
+    width: 123px
+
+
+
+.items_add:hover
+    box-shadow: 0 0 5px #fff
+
+
+
+.butt_browse
+    margin-top: 1px
+    display: flex
+    justify-content: center
+
+
+.button_1
+    height: 48px
+    width: 212px
+    font-size: 16px
+    font-weight: bold
+    color: rgba(255, 255, 255, 1)
+    text-align: center
+    letter-spacing: 0.03em
+    line-height: 54px
+
+    user-select: none
+    text-decoration: none
+    outline: none
+    background-color: $color-site-active
+    padding: 0 29px 0 19px
+
+
+/* стилизация banner_offer*/
+
+.banner_offer
+  margin-top: 113px
+  height: 529px
+  background-image: url(img/banner_30_off_bak.png)
+  background-position: center
+  background-repeat: no-repeat
+  display: flex
+  justify-content: space-between
+  position: relative
+
+
+
+.banner_offer2
+    width: 767px
+    height: 529px
+    background: url(img/banner_30_off_2.png)  //no-repeat center
+    display: flex
+    position: relative
+
+
+
+
+.banner_offer_promo
+    margin-top: 146px
+    padding-left: 39px
+    position: absolute
+
+
+.b_o_promo__h1
+
+    font-size: 52px
+    font-weight: bold
+    color: rgba(255, 255, 255, 1)
+    letter-spacing: 0.03em
+    line-height: 45px
+    margin-bottom: 12px
+
+
+
+
+.b_o_promo__h2
+    font-size: 32px
+    font-weight: bold
+    color: rgba(255, 255, 255, 1)
+    letter-spacing: 0.03em
+
+
+
+.b_o_promo__h1 b
+    color: $color-site-active
+
+
+.banner_offer_right
+    width: 373px
+    color: azure
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+
+
+
+.ban_off_cont
+    color: azure
+    /*outline: 1px solid white*/
+    display: flex
+    align-items: flex-start
+
+
+
+.bann_content_h1
+    font-size: 20px
+    font-weight: bold
+    color: rgba(251, 251, 251, 1)
+    letter-spacing: 0.03em
+    margin-bottom: 17px
+
+
+/* стилизация subscribe*/
+
+.subscribe
+  margin-top: 97px
+  height: 438px
+  background: url(img/subscribe_back.png), url(img/subscribe.png) no-repeat center
+  /*background-size: cover*/
+  display: flex
+  justify-content: space-between
+  position: relative
+
+
+.Bin_Burhan
+    margin-top: 111px
+    display: flex
+    justify-content: flex-start
+
+
+.Bin_Content
+    width: 426px
+    display: flex
+    flex-direction: column
+
+
+.Bin_Content_text
+    margin-bottom: 10px
+    font-size: 16px
+    font-style: italic
+    color: rgba(34, 34, 36, 1)
+    letter-spacing: 0.03em
+    line-height: 26px
+
+
+.Bin_Content_name h1
+    font-size: 16px
+    font-weight: bold
+    color: $color-site-active
+    letter-spacing: 0.03em
+    line-height: 26px
+
+
+
+
+.Bin_Content_name h2
+    font-size: 12px
+    font-weight: 300
+    color: rgba(34, 34, 36, 1)
+    letter-spacing: 0.03em
+    line-height: 14px
+    margin-bottom: 15px
+
+
+.Bin_Link
+    height: 35px
+    display: flex
+    justify-content: flex-start
+    align-items: flex-end
+
+
+
+.Bin_link1
+    width: 38px
+    height: 20px
+    /*outline: 3px solid red*/
+    border-bottom: 4px solid rgba(214, 214, 214, 1)
+    margin-right: 13px
+
+
+.Bin_link1:focus
+    border-bottom: 4px solid $color-site-active
+
+
+.subscribe_mail
+    margin-top: 148px
+    margin-left: 126px
+    display: flex
+    flex-direction: column
+
+
+.sub_content
+    margin-bottom: 50px
+    height: 41px
+    width: 400px
+    display: flex
+    flex-direction: column
+
+
+
+.sub_content h1
+    font-size: 24px
+    color: rgba(34, 34, 36, 1)
+    text-align: center
+    letter-spacing: 0.03em
+    line-height: 50px
+    text-transform: uppercase
+
+
+.sub_content p
+    font-size: 14px
+    color: rgba(34, 34, 36, 1)
+    text-align: center
+    letter-spacing: 0.03em
+    line-height: 24px
+
+
+.sub_form
+    display: flex
+    justify-content: flex-start
+
+
+.mail
+
+    display: flex
+    align-items: center
+    height: 46px
+    width: 334px
+    background-color: rgba(225, 225, 225, 1)
+    border-radius: 23px 0 0 23px
+    padding-left: 28px
+
+
+
+.button_sub
+    height: 46px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 14px
+    color: rgba(255, 255, 255, 1)
+    text-align: center
+    letter-spacing: 0.03em
+    line-height: 46px
+    user-select: none
+    text-decoration: none
+    /*outline: none*/
+    background-color: $color-site-active
+    padding: 0 29px 0 19px
+    /* Отступ от текста до рамки */
+    border-radius: 0 23px 23px 0
+
+
+/*стилизация footer*/
+
+.footer
+  display: flex
+  flex-direction: column
+
+
+.footer1
+    margin-top: 109px
+    display: flex
+    justify-content: space-between
+
+
+.footer__left
+    display: flex
+    flex-direction: column
+
+
+.footer_brand
+    width: 431px
+    font-size: 14px
+    font-weight: 300
+    color: rgba(137, 137, 137, 1)
+    text-align: left
+    letter-spacing: 0.03em
+    line-height: 24px
+
+
+.footer_brand p
+    margin-top: 29px
+
+
+.footer1 li
+    list-style-type: none
+
+
+.footer1 ul
+    display: flex
+    flex-direction: column
+
+
+.footer h1
+    font-size: 18px
+    font-weight: bold
+    color: $color-site-active
+    text-align: right
+    letter-spacing: 0.03em
+    line-height: 26px
+    margin-bottom: 45px
+
+
+.company
+    margin-left: 61px
+
+
+
+.info
+    margin-left: 129px
+
+
+.shop_cat
+    margin-left: 79px
+
+
+.footer1_a
+    font-size: 16px
+    color: rgba(137, 137, 137, 1)
+    letter-spacing: 0.03em
+    line-height: 40px
+
+
+.footer1_a:hover
+    color: $color-site-active
+
+
+.footer2
+  height: 79px
+  margin-top: 63px
+  background-image: url(img/footer.png)
+  background-color: #e8e8e8
+  background-position: center -51px
+  background-repeat: no-repeat
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+
+.All_rights
+  font-size: 16px
+  color: rgba(122, 122, 122, 1)
+  text-align: right
+  letter-spacing: 0.03em
+  line-height: 42px
+
+
+
+.wrap
+    position: relative
+    display: inline-flex
+    padding-left: 158px
+
+
+
+
+.wrap a i
+    font-family: FontAwesome
+    text-decoration: none
+    color: rgba(178, 178, 178, 1)
+    background-color: rgba(255, 255, 255, 1)
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    padding: 7px
+    width: 32px
+    height: 32px
+    /*border-radius: 10%*/
+    font-size: 16px
+
+
+.wrap a i:hover
+    background-color: $color-site-active
+    color: rgba(247, 247, 248, 1)
+
+
+.wrap a:not(:last-child)
+    margin-right: 8px
+
+
+/* page shopping_cart styles for breadcrumb*/
+
+.breadcrumb
+  background-color: rgba(248, 243, 244, 1)
+  height: 148px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+
+
+.breadcrumb__h1
+
+    font-size: 24px
+    font-weight: 900
+    color: $color-site-active
+    text-align: center
+    line-height: 20px
+    text-transform: uppercase
+
+
+
+.breadcrumb__links a
+    font-size: 14px
+    font-weight: 300
+    color: rgba(99, 99, 99, 1)
+    text-align: center
+    line-height: 20px
+    text-transform: uppercase
+
+
+/* page shopping_cart styles for shopping_cart*/
+
+.shopping_cart
+  margin-top: 90px
+.shopping_content
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-bottom: 1px solid rgba(234, 234, 234, 1)
+  padding-bottom: 26px
+
+
+
+
+.shopping_content h1
+    font-size: 13px
+    font-weight: bold
+    color: rgba(34, 34, 34, 1)
+    letter-spacing: -0.01em
+    line-height: 20px
+    text-transform: uppercase
+    width: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.shopping_product
+    border-bottom: 1px solid rgba(234, 234, 234, 1)
+    padding-bottom: 26px
+    margin-bottom: 26px
+    height: 115px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+
+.prod_detals
+    display: flex
+    justify-content: flex-start
+
+
+
+.prod__detals
+    display: flex
+    flex-direction: column
+
+.prod__detals a h1:hover
+    color: $color-site-active
+
+.prod__detals h1
+    padding-top: 16px
+    padding-bottom: 38px
+    padding-left: 21px
+    font-size: 13px
+    color: rgba(34, 34, 34, 1)
+    text-transform: uppercase
+
+
+.prod__detals p
+    padding-left: 21px
+    font-size: 13px
+    color: rgba(87, 87, 87, 1)
+    line-height: 20px
+
+
+
+.prod__detals p x
+    font-weight: 300
+    color: rgba(111, 110, 110, 1)
+
+
+
+.unit_price,
+.shipping,
+.subtotal,
+.quantity,
+.action
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100px
+
+
+.action i
+  font-family: 'FontAwesome'
+  font-size: 16px
+  color: rgba(192, 192, 192, 1)
+  text-transform: none
+
+.action i:hover
+  color: red
+  cursor: pointer
+
+
+
+.unit_price,
+.shipping,
+.subtotal
+    font-size: 13px
+    color: rgba(101, 101, 101, 1)
+    line-height: 20px
+
+
+
+
+.cart_buttons
+    margin-top: 18px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+.cart__buttons1
+    height: 50px
+    width: 235px
+    font-size: 14px
+    font-weight: bold
+    color: rgba(74, 74, 74, 1)
+    text-transform: uppercase
+
+
+.cart__buttons2
+    height: 50px
+    width: 225px
+    font-size: 14px
+    font-weight: bold
+    color: rgba(74, 74, 74, 1)
+    text-transform: uppercase
+
+
+/* page shopping_cart styles for user_forms*/
+
+.user_forms
+    margin-top: 63px
+    display: flex
+    justify-content: space-between
+
+
+.address_form
+    width: 355px
+    display: flex
+    flex-direction: column
+
+
+.address_form h1
+  font-size: 16px
+  font-weight: bold
+  color: rgba(34, 34, 34, 1)
+  text-transform: uppercase
+
+
+.country
+    margin-top: 22px
+
+
+
+.form_country,
+.form_state,
+.form_postcode
+    width: 355px
+    height: 45px
+    border: 1px solid rgba(234, 234, 234, 1)
+    margin-bottom: 20px
+    font-size: 13px
+    font-weight: 300
+    color: rgba(177, 177, 177, 1)
+
+
+.quote
+    margin-top: 3px
+    height: 35px
+    width: 100px
+    font-size: 11px
+    font-weight: bold
+    color: rgba(74, 74, 74, 1)
+    text-transform: uppercase
+
+
+
+
+
+.code_form
+    width: 355px
+    display: flex
+    flex-direction: column
+
+
+
+.code_form h1
+    font-size: 16px
+    font-weight: bold
+    color: rgba(34, 34, 34, 1)
+    text-transform: uppercase
+
+
+.code_form p
+    margin-top: 28px
+    font-size: 14px
+    font-weight: 300
+    color: rgba(0, 0, 0, 1)
+
+
+.code__state
+    width: 355px
+    height: 45px
+    border: 1px solid rgba(234, 234, 234, 1)
+    margin-top: 24px
+    margin-bottom: 25px
+    font-size: 13px
+    font-weight: 300
+    color: rgba(177, 177, 177, 1)
+
+
+
+
+.coupon
+    height: 35px
+    width: 118px
+    font-size: 11px
+    font-weight: bold
+    color: rgba(74, 74, 74, 1)
+    text-transform: uppercase
+
+
+.form_total
+    width: 360px
+    height: 214px
+    display: flex
+    flex-direction: column
+    background-color: rgba(245, 243, 243, 1)
+
+
+.total_content
+    margin-top: 40px
+    margin-right: 40px
+    margin-left: 40px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+
+
+.total_content p
+    font-size: 11px
+    color: rgba(74, 74, 74, 1)
+    text-transform: uppercase
+
+
+.total_content h1
+    margin-top: 14px
+    margin-bottom: 22px
+    font-size: 16px
+    font-weight: bold
+    color: rgba(34, 34, 34, 1)
+    text-transform: uppercase
+
+
+
+.total_content h1 x
+    font-size: 16px
+    font-weight: bold
+    color: $color-site-active
+    text-transform: uppercase
+
+
+
+.total_content p x,
+.total_content h1 x
+    padding-left: 10px
+
+
+
+.button_checkout
+    background-color: rgba(226, 226, 226, 1)
+
+
+
+.form_checkout
+    height: 50px
+    width: 273px
+    border-top: 1px solid red
+    margin-top: 0
+
+    background-color: $color-site-active
+    font-size: 16px
+    font-weight: bold
+    color: rgba(255, 255, 255, 1)
+    text-transform: uppercase
+
+
+/* page single_page styles for slide*/
+.one
+  width: 1600px
+  padding: 0 calc(50% - 800px)
+
+
+.slide
+  height: 777px
+  width: 1600px
+  padding: 0 calc(50% - 800px)
+  background-color: rgba(247, 247, 247, 1)
+  border: 1px solid rgba(234, 234, 234, 1)
+  background-image: url(img/slide_single.png)
+  background-position: center -10px
+  background-repeat: no-repeat
+  display: flex
+  align-items: center
+  justify-content: space-between
+  //position: relative
+
+
+.arrow
+    height: 47px
+    width: 47px
+    background-color: rgba(42, 42, 42, 0.15)
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.arrow:hover
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+
+
+/* page single_page styles for product_description*/
+
+.product_description
+  position: relative
+  padding: 0 calc(50% - 570px)
+
+
+
+
+.product__description
+    height: 730px
+    width: 1141px
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: -110px
+    background-color: rgba(255, 255, 255, 1)
+    border: 1px solid rgba(234, 234, 234, 1)
+
+
+
+.product_description_a
+    margin-top: 73px
+    padding-bottom: 14px
+    font-size: 14px
+    font-weight: bold
+    color: $color-site-active
+    text-align: center
+    line-height: 24px
+    border-bottom: 1px solid rgba(234, 234, 234, 1)
+
+
+.product_description_aa
+    width: 63px
+    height: 1px
+    border-bottom: 4px solid rgba(239, 91, 112, 1)
+    margin-right: 13px
+
+    background-color: rgba(239, 91, 112, 1)
+
+
+.product_description h1
+    margin-top: 14px
+    margin-bottom: 24px
+    font-size: 18px
+    font-weight: 900
+    color: rgba(77, 77, 77, 1)
+    text-align: center
+    line-height: 24px
+    text-transform: uppercase
+
+
+
+.stars
+    margin-bottom: 26px
+    display: flex
+    justify-content: center
+
+
+
+.stars i
+    font-size: 19px
+    font-family: FontAwesome
+    text-decoration: none
+    color: rgba(241, 183, 70, 1)
+    text-transform: uppercase
+    padding: 8px
+    width: 3px
+    height: 3px
+    /*border-radius: 10%*/
+
+
+.prod_description_content
+    width: 625px
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-bottom: 1px solid gray(234)
+    padding-bottom: 30px
+
+
+.prod_description_content p
+    font-size: 24px
+    font-weight: bold
+    color: rgba(239, 91, 112, 1)
+    text-align: center
+    line-height: 24px
+
+
+.prod_description_content_1
+    margin-bottom: 20px
+    font-size: 14px
+    font-weight: 300
+    color: rgba(94, 94, 94, 1)
+    text-align: center
+    line-height: 24px
+
+
+
+
+.prod_description_content_2
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+
+.prod_description_content_2 p
+    margin-right: 15px
+    margin-left: 15px
+    margin-bottom: 37px
+    font-size: 14px
+    font-weight: bold
+    color: rgba(185, 185, 185, 1)
+    text-align: center
+    line-height: 24px
+
+
+.prod_description_content_2 p x
+    font-size: 14px
+    font-weight: bold
+    color: rgba(47, 47, 47, 1)
+    text-align: center
+    line-height: 24px
+
+
+
+
+.prod_description_forms
+    margin-top: 33px
+    display: flex
+    flex-direction: column
+
+
+.prod_description__forms
+    display: flex
+    justify-content: space-between
+    margin-bottom: 23px
+
+
+.prod_description__forms h1
+    margin-top: 0
+    margin-bottom: 16px
+    font-size: 14px
+    font-weight: bold
+    color: rgba(47, 47, 47, 1)
+    text-align: left
+
+
+.prod_description__forms input,
+.prod_description__forms select
+    height: 35px
+    width: 144px
+    background-color: rgba(255, 255, 255, 1)
+    border: 1px solid rgba(234, 234, 234, 1)
+
+
+.prod_description__forms input
+    height: 33px
+
+
+.button_addTocart
+    padding-top: 0
+    margin-top: 0
+    height: 55px
+    width: 537px
+    outline: 1px solid rgba(239, 91, 112, 1)
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 16px
+    font-weight: bold
+    color: rgba(239, 91, 112, 1)
+
+.button_addTocart:hover
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+
+
+/* page single_page styles for like_also*/
+
+.like_also 
+  margin-top: 735px
+  bottom: 1048px
+  top: 1839px
+  /*position: relative*/
+  display: flex
+  flex-direction: column
+
+
+.like_also_h1
+    display: flex
+    justify-content: center
+    font-size: 24px
+    font-weight: 900
+    color: rgba(77, 77, 77, 1)
+    text-align: center
+    line-height: 20px
+    text-transform: uppercase
+
+
+
+.like_content
+    width: 1141px
+
+
+.like_items
+    position: relative
+    margin-top: 60px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+
+
+
+.like_items_list:hover
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
+
+
+.like_items_list:hover .items_img
+    filter: brightness(40%)
+
+
+.like_items_list:hover .items_add
+    display: flex
+
+
+.like_items_list
+    position: relative
+    height: 364px
+    width: 263px
+    margin-right: 1px
+    margin-bottom: 18px
+    display: flex
+    flex-direction: column
+
+
+
+.like_items_content
+    margin-top: 18px
+    margin-left: 15px
+
+
+
+
+.like_price_stars
+    display: flex
+    justify-content: space-between
+
+
+
+.like_items_link
+    height: 280px
+    width: 261px
+    background: url(img/like_list_0.png)
+    display: flex
+    justify-content: center
+
+.items_img
+    height: 280px
+
+.like_items_name
+  font-size: 13px
+  color: rgba(111, 110, 110, 1)
+  text-align: center
+  text-transform: uppercase
+
+.like_items_price
+  font-size: 16px
+  font-weight: bold
+  color: rgba(241, 109, 127, 1)
+  text-align: center
+  text-transform: uppercase
+
+.like_items_stars
+    margin-top: 18px
+    margin-right: 15px
+
+/* page product styles for product_content*/
+
+.product_content
+  height: 1600px
+  display: flex
+  margin-top: 59px
+  //flex-direction: row
+
+
+/* page product styles for product_content_sidebar*/
+
+.product_content_sidebar
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  margin-right: 50px
+  //outline: 1px solid red
+
+.prod_cont_sidebar
+  width: 243px
+  //outline: 1px solid red
+  padding-top: 18px
+  padding-bottom: 18px
+
+.prod_cont_sidebar:first-child
+  padding-top: 0
+
+.prod_cont_sidebar[open] .sidebar_drop
+  display: flex
+  top: 23px
+  z-index: 1
+
+
+.prod_cont_sidebar[open] .prod_cont_sidebar_summ::after
+  content: '\25B2'
+  color: red
+
+.prod_cont_sidebar[open] .prod_cont_sidebar_summ
+  font-size: 14px
+  font-weight: bold
+  color: rgba(239, 91, 112, 1)
+  line-height: 20px
+  text-transform: uppercase
+
+.prod_cont_sidebar_summ
+      height: 38px
+      width: 227px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-size: 14px
+      font-weight: bold
+      color: rgba(111, 110, 110, 1)
+      line-height: 20px
+      text-transform: uppercase
+      //outline: 1px solid red
+      border-left: 5px solid rgba(239, 91, 112, 1)
+      padding-left: 11px
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
+
+.prod_cont_sidebar_summ::-webkit-details-marker
+        display: none
+
+
+.prod_cont_sidebar_summ::after
+        content: '\25BC'
+        padding-right: 0.5em
+        color: rgba(131, 131, 131, 1)
+
+
+.sidebar_drop
+    background-color: #ffffff
+    border-radius: 5px
+    padding: 12px 20px
+    //position: absolute
+    //display: flex
+    top: 51px
+    //border: 1px solid red
+
+
+.sidebar_drop__flex
+            width: 243px
+            margin-right: 46px
+
+
+.sidebar_drop__flex:last-of-type
+              margin-right: 0
+
+.sidebar_drop__ul
+                  list-style-type: none
+
+.sidebar_drop__link
+                      font-size: 14px
+                      color: rgba(111, 110, 110, 1)
+                      line-height: 33px
+
+
+.sidebar_drop__link:hover
+                        color: #f16d7f
+
+
+/* page product styles for product_content_filt_prod_pag*/
+
+.product_content_filt_prod_pag
+  //outline: 1px solid red
+  width: 1164px
+  height: 200px
+  display: flex
+  flex-direction: column
+
+
+
+/* page product styles for product_content_filter*/
+
+.product_content_filter
+  display: flex
+  flex-direction: column
+  //outline: 1px solid red
+
+
+.filter_sort_char
+    //outline: 1px solid red
+    display: flex
+    justify-content: space-between
+    //margin-bottom: 100px
+
+.filter_trending
+      width: 177px
+      //outline: 1px solid red
+      display: flex
+      flex-direction: column
+.trending_h1
+        font-size: 14px
+        font-weight: bold
+        color: rgba(111, 110, 110, 1)
+        line-height: 20px
+        text-transform: uppercase
+        margin-bottom: 24px
+
+.tranding__p
+        display: flex
+        flex-direction: row
+        flex-flow: wrap
+        cursor: pointer
+
+.tranding_p:hover
+  color: rgba(241, 109, 127, 1)
+
+.tranding_p
+  font-size: 14px
+  color: rgba(111, 110, 110, 1)
+  line-height: 26px
+
+.tranding_p span
+  color: rgba(223, 223, 223, 1)
+
+
+.filter_size
+      //height: 73px
+      width: 236px
+      //outline: 1px solid red
+
+
+.size_h1
+  font-size: 14px
+  font-weight: bold
+  color: rgba(111, 110, 110, 1)
+  line-height: 20px
+  text-transform: uppercase
+  margin-bottom: 24px
+
+.custom-checkbox
+  display: none
+.filter__size label
+  font-size: 14px
+  color: rgba(111, 110, 110, 1)
+  line-height: 20px
+  text-transform: uppercase
+
+.custom-checkbox+label
+  margin-left: 5px
+  margin-right: 5px
+
+.custom-checkbox+label::before
+  margin-bottom: 10px
+  content: ''
+  display: inline-flex
+  height: 13px
+  width: 13px
+  background-color: rgba(255, 255, 255, 1)
+  border: 1px solid rgba(235, 235, 235, 1)
+
+
+.custom-checkbox:checked+label::before
+  content: "\2713"
+  font-size: 12px
+  color: rgba(111, 110, 110, 1)
+  line-height: 17px
+  text-transform: uppercase
+
+.custom-checkbox:hover+label:hover
+  color: rgba(241, 109, 127, 1)
+
+.filter_price
+      //height: 73px
+      width: 263px
+      //outline: 1px solid red
+.price_h1
+  font-size: 14px
+  font-weight: bold
+  color: rgba(111, 110, 110, 1)
+  line-height: 20px
+  text-transform: uppercase
+
+.range-controls
+  position: relative
+  margin-top: 24px
+  //margin-bottom: 32px
+
+
+.scale
+  position: relative
+  top: -3px
+  height: 6px
+  background: rgba(240, 240, 240, 1)
+  border-radius: 3px
+
+.bar1
+  position: absolute
+  width: 10%
+  height: 6px
+  background: rgba(240, 240, 240, 1)
+
+.bar2
+  position: absolute
+  left: 10%
+  width: 50%
+  height: 6px
+  background: rgba(241, 109, 127, 1)
+
+
+.range-toggle
+  position: absolute
+  top: -9px
+  width: 14px
+  height: 14px
+
+  background: rgba(241, 109, 127, 1)
+  border: 2px solid rgba(241, 109, 127, 1)
+  border-radius: 14px
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2)
+  cursor: pointer
+
+.range-toggle:hover
+  background: red
+.range-toggle-min
+  left: 10%
+.range-toggle-max
+  left: 60%
+
+.price_p
+  margin-top: 24px
+  display: flex
+  justify-content: space-between
+  font-size: 14px
+  color: rgba(111, 110, 110, 1)
+  line-height: 26px
+
+
+
+.filter_sort_bar
+  height: 50px
+  //outline: 1px solid red
+  margin-top: 42px
+  margin-bottom: 24px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  background-color: rgba(243, 243, 243, 1)
+
+
+.sortBy_
+  display: flex
+  flex-direction: row
+  margin-left: 10px
+
+
+.sortBy
+  height: 30px
+  background-color: rgba(255, 255, 255, 1)
+  border: 1px solid rgba(235, 235, 235, 1)
+  cursor: pointer
+  padding: 5px
+  font-size: 14px
+  color: rgba(111, 110, 110, 1)
+  line-height: 10px
+
+.sortBy_ select
+  height: 30px
+  background-color: rgba(255, 255, 255, 1)
+  border: 1px solid rgba(235, 235, 235, 1)
+  padding: 5px
+  font-size: 14px
+  color: rgba(111, 110, 110, 1)
+  line-height: 10px
+
+.filter_sort_show
+  margin-left: 10px
+
+
+
+/* page product styles for product_content_products*/
+
+.product_content_products
+    //height: 900px
+    //width: 848px
+    //outline: 1px solid red
+
+.content_product_flex
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-flow: wrap
+  margin-left: 5px
+
+
+
+.catalog_items_name
+  font-size: 13px
+  color: rgba(111, 110, 110, 1)
+  text-align: center
+  text-transform: uppercase
+
+/* page product styles for product_content_pagination*/
+.product_content_pagination
+  margin-top: 43px
+  height: 44px
+  display: flex
+  justify-content: space-between
+
+
+.pagination_pages
+  display: flex
+  align-items: center
+
+.pagination
+  display: flex
+  flex-direction: row
+
+.pagination li
+  display: flex
+  margin-left: 10px
+
+
+.pagination li a
+  font-size: 16px
+  font-weight: 300
+  color: rgba(196, 196, 196, 1)
+  line-height: 26px
+
+.pagination li a:hover
+  color: rgba(241, 109, 127, 1)
+
+.button_white
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 16px
+  color: $color-site-active
+  letter-spacing: 0.03em
+  line-height: 32px
+  height: 44px
+  width: 150px
+  background-color: rgba(255, 255, 255, 1)
+  border: 1px solid rgba(239, 91, 112, 1)
+  border-radius: 3px
+  cursor: pointer
+
+.button_white a
+  font-size: 16px
+  color: $color-site-active
+  letter-spacing: 0.03em
+  line-height: 32px
+
+.button_white:hover
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+
+/* page product styles for feature_box*/
+.feature_box
+  //outline: 1px solid red
+  width: 1600px
+  height: 341px
+  padding: 0 calc(50% - 700px)
+  background-color: rgba(34, 34, 36, 1)
+  position: relative
+
+  .feature_box_flex
+    display: flex
+    justify-content: center
+    align-items: center
+    //outline: 1px solid red
+    margin: 100px
+    position: absolute
+
+    .feature_box_content
+      width: 320px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      margin-left: 81px
+
+
+      .content
+        font-size: 14px
+        font-weight: 300
+        color: rgba(251, 251, 251, 1)
+        text-align: center
+        letter-spacing: 0.03em
+        line-height: 24px
+
+      .feature_box_content_h1
+        margin-top: 32px
+        margin-bottom: 17px
+        font-size: 20px
+        font-weight: bold
+        color: rgba(251, 251, 251, 1)
+        text-align: center
+        letter-spacing: 0.03em
+
+
+
+/* page checkout styles for checkout*/
+
+.checkout
+  padding: 0
+  margin: 0
+  outline: none
+
+//.checkout:first-child
+  padding-top: 0
+
+.checkout[open] .checkout_drop
+  margin-top: 0
+
+.checkout[open] .checkout_list
+  border-bottom: 1px solid white
+  border-top: 1px solid white
+
+.checkout[open] .checkout_drop
+  animation: spoiler 1s
+
+@keyframes spoiler
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+
+.checkout_list
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  height: 73px
+  width: 100%
+  cursor: pointer
+  margin-bottom: 0
+  font-size: 16px
+  font-weight: bold
+  color: rgba(34, 34, 34, 1)
+  text-transform: uppercase
+  border-bottom: 1px solid rgba(232, 232, 232, 1)
+  border-top: 1px solid rgba(232, 232, 232, 1)
+
+.checkout_list::after
+  display: none
+
+
+.checkout_drop
+  display: flex
+  justify-content: space-between
+  //height: 394px
+  width: 80%
+  margin-top: 0
+  margin-left: 35px
+  //outline: 1px solid red
+
+
+
+
+.form_1
+  width: 390px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  //outline: 1px solid red
+
+.radio
+  display: flex
+.form_par
+  margin-bottom: 34px
+
+.checkout_form_h1
+  font-size: 13px
+  color: rgba(34, 34, 34, 1)
+  text-transform: uppercase
+  margin-bottom: 15px
+  padding-left: 0
+
+.checkout_form_text
+  font-size: 13px
+  color: rgba(179, 178, 178, 1)
+  line-height: 20px
+  text-transform: none
+
+.radio
+  display: flex
+  flex-direction: column
+  margin-bottom: 13px
+
+.radio label
+  font-size: 12px
+  color: rgba(34, 34, 34, 1)
+  text-transform: uppercase
+  margin-bottom: 20px
+
+.checkout_radio
+  margin-right: 14px
+
+.radio label::before
+  padding-left: 10px
+
+.form_1 i
+  font-family: 'FontAwesome'
+  font-size: 13px
+  color: rgba(179, 178, 178, 1)
+  line-height: 25px
+
+.checkout_button
+  height: 50px
+  width: 180px
+  background-color: rgba(255, 255, 255, 1)
+  border: 1px solid rgba(234, 234, 234, 1)
+  font-size: 14px
+  font-weight: bold
+  color: rgba(74, 74, 74, 1)
+  text-transform: uppercase
+  cursor: pointer
+  margin-top: 38px
+
+.checkout_button:hover
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+
+
+.form_par_email
+  margin-bottom: 23px
+
+.form_par_email_1
+   margin-top: -36px
+
+.form_email
+  display: flex
+  flex-direction: column
+  margin-bottom: 33px
+
+.form_email label
+  display: flex
+  flex-direction: column
+  font-size: 12px
+  color: rgba(34, 34, 34, 1)
+  line-height: 20px
+
+
+.email_pass_text
+  height: 45px
+  width: 390px
+  background-color: rgba(255, 255, 255, 1)
+  border: 1px solid rgba(234, 234, 234, 1)
+  margin-top: 15px
+  margin-bottom: 22px
+
+.login
+  display: flex
+  flex-direction: row
+  align-items: flex-end
+  margin-bottom: 79px
+.login a
+  font-size: 14px
+  color: rgba(34, 34, 34, 1)
+  line-height: 20px
+  text-transform: none
+  margin-left: 32px
+
+.login a:hover
+  color: $color-site-active
+
+.login_forgot:hover
+   transform: scale(1.5,2)
+
+.login_forgot
+  margin-top: 10px
+  margin-bottom: 20px
+  height: 12px
+
+
+a, button, summary
+  -webkit-transition: all 0.5s
+  -moz-transition: all 0.5s
+  -o-transition: all 0.5s
