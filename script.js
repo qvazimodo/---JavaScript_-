@@ -22,4 +22,3 @@ const renderGoodsItem = (titleImage="", title="default", color="green", size="X"
 
 renderGoodsList(goods);
 
-//
